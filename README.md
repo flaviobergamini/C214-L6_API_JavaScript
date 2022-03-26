@@ -51,6 +51,32 @@ Após as instalações das dependências do projeto serem concluídas, inicie o 
 ```
 npm start
 ```
+#### Rotas
+Dentro do Postman, ou outro cliente HTTP, utilize a URL:
+```
+http://localhost:6000
+```
+Se tiver conflito de portas em seu computador, vá até o arquivo "server.js" e troque a constante "port".
+
+A rota existente na API é: /heroes
+
+* Método GET: /research, lista todos os heróis cadastrados no banco, acesse:
+```
+http://localhost:6000/heroes/research
+```
+* Método POST: /create, realiza o cadastro dos heróis no banco de dados MongoDB Atlas, acesse:
+```
+http://localhost:6000/heroes/create
+```
+O envio das informações é por meio da Body em um objeto JSON contendo os seguintes campos:
+```
+{
+    "nome": "Hulk",
+    "poder": "Força",
+    "forca": 2000,
+    "origem": "EUA"
+}
+```
 
 ## :question: Dúvidas
 Envie um email ao desenvolvedor: flaviohenrique@gec.inatel.br
