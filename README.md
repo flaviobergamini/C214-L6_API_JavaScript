@@ -8,7 +8,7 @@ Imagem retirada do site Drupal Sun: https://drupalsun.com/
 ### :books: Descrição
 
 <p>Projeto de C214-L6, laboratório da disciplina de Engenharia de Software.</p>
-<p>Projeto de uma API de Super Heróis com dois endpoints somente para adicionar e buscar os personagens no banco de dados</p>
+<p>Projeto de uma API de Super Heróis com dois endpoints somente para adicionar e buscar os personagens no banco de dados.</p>
 
 #### Projeto
 - Essa API foi desenvolvida em JavaScript usando o framework NodeJS. O banco de dados no qual ela se comunica é o MongoDB Atlas. 
@@ -24,6 +24,7 @@ Imagem retirada do site Drupal Sun: https://drupalsun.com/
 - [NodeJS](https://nodejs.org/en/)
 - [Visual Studio Code](https://code.visualstudio.com/download)
 - [Postman](https://www.postman.com/downloads/)
+- [MongoDB](https://www.mongodb.com/cloud/atlas/lp/try2?utm_content=rlsavisitor&utm_source=google&utm_campaign=gs_americas_rlsamultirest_search_core_brand_atlas_desktop_rlsa&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=14412646314&adgroup=131761122132&gclid=Cj0KCQjw8_qRBhCXARIsAE2AtRYhQ9pEkjwdAhEn_dJbdPPKRTUtw5NzNf6zzq49qGy7K2n7S6ggQOQaAnhAEALw_wcB)
 
 
 Observação: Você pode usar a IDE e o criente HTTP de sua preferência, o Visual Studio Code e o Postman são apenas sugestões.
@@ -32,11 +33,11 @@ Clone o repositório em seu computador para poder acessar o projeto:
 ```
 $ git clone https://github.com/flaviobergamini/C214-L6_API_JavaScript.git
 ```
-Para poder entrar dentro do repositório clonado usando o terminal, digite: 
+Para acessar o repositório clonado usando o terminal, digite: 
 ```
 $ cd C214-L6_API_JavaScript
 ```
-Para poder entrar na pasta dos arquivos de código pelo terminal, digite:
+Para acessar os arquivos de código pelo terminal, digite:
 ```
 $ cd API
 ```
@@ -56,7 +57,7 @@ Dentro do Postman, ou outro cliente HTTP, utilize a URL:
 ```
 http://localhost:6000
 ```
-Se tiver conflito de portas em seu computador, vá até o arquivo "server.js" e troque a constante "port".
+Se tiver conflito de portas em seu computador, vá até o arquivo "server.js" e altere o valor atribuído a constante "port".
 
 A rota existente na API é: /heroes
 
@@ -68,7 +69,7 @@ http://localhost:6000/heroes/research
 ```
 http://localhost:6000/heroes/create
 ```
-O envio das informações é por meio da Body em um objeto JSON contendo os seguintes campos:
+O envio das informações é feito por meio da Body em um objeto JSON contendo os seguintes campos:
 ```
 {
     "nome": "Hulk",
